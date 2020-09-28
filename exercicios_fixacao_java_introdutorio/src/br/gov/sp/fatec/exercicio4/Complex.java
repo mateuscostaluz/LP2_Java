@@ -10,23 +10,23 @@ public class Complex {
   private double imaginaria;
 
   public Complex() {
-    this.real = 0;
-    this.imaginaria = 0;
+    setReal(0);
+    setImaginaria(0);
   }
 
   public Complex(double real) {
-    this.real = real;
-    this.imaginaria = 0;
+    setReal(real);
+    setImaginaria(0);
   }
 
   public Complex(double real, double imaginaria) {
-    this.real = real;
-    this.imaginaria = imaginaria;
+    setReal(real);
+    setImaginaria(imaginaria);
   }
 
   public Double getModulo() {
-    Double realPow = Math.pow(real, 2);
-    Double imaginariaPow = Math.pow(imaginaria, 2);
+    Double realPow = Math.pow(getReal(), 2);
+    Double imaginariaPow = Math.pow(getImaginaria(), 2);
     Double somaRealPowImaginariaPow = realPow + imaginariaPow;
     Double raizSomaRealPowImaginariaPow = Math.sqrt(somaRealPowImaginariaPow);
     
@@ -34,8 +34,7 @@ public class Complex {
   }
   
   public Double getAngulo() {
-    Double modulo = this.getModulo();
-    Double divisaoRealImaginaria = real / imaginaria;
+    Double divisaoRealImaginaria = getReal() / getImaginaria();
     Double tangenteDivisaoRealImaginaria = Math.tan(divisaoRealImaginaria);
     Double arcotangenteTangenteDivisaoRealImaginaria = Math.atan(tangenteDivisaoRealImaginaria);
     
@@ -43,30 +42,31 @@ public class Complex {
   }
 
   public Double getInversoAditivo() {
-    Double somaRealImaginaria = real + imaginaria;
+    Double somaRealImaginaria = getReal() / getImaginaria();
     Double inversoAditivo = Math.pow(somaRealImaginaria, -1);
     
     return inversoAditivo;
   }
 
   public Complex somar(Complex x, Complex y) {
-    return new Complex(x.real + y.real, x.imaginaria + y.imaginaria);
+    return new Complex(x.getReal() + y.getReal(), x.getImaginaria() + y.getImaginaria());
   }
 
   public Complex subtrair(Complex x, Complex y) {
-    return new Complex(x.real - y.real, x.imaginaria - y.imaginaria);
+    return new Complex(x.getReal() - y.getReal(), x.getImaginaria() - y.getImaginaria());
   }
 
   public Complex multiplicar(Complex x, Complex y) {
-    return new Complex(x.real * y.real, x.imaginaria * y.imaginaria);
+    return new Complex(x.getReal() * y.getReal(), x.getImaginaria() * y.getImaginaria());
   }
 
   public Complex dividir(Complex x, Complex y) {
-    return (y.real > 0 && y.imaginaria > 0) ? new Complex(x.real / y.real, x.imaginaria / y.imaginaria) : new Complex();
+    return (y.getReal() > 0 && y.getImaginaria() > 0) ? new Complex(x.getReal() / y.getReal(), 
+                                                                    x.getImaginaria() / y.getImaginaria()) 
+                                                      : new Complex();
   }
 
   public String toString() {
-    return "(" + real + ", " + imaginaria + ")";
+    return "(" + getReal() + ", " + getImaginaria() + ")";
   }
-
 }
