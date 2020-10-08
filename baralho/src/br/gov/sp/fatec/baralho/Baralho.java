@@ -71,7 +71,7 @@ public class Baralho {
   public void embaralhar() {
     int posicao;
     Carta auxiliar;
-    for(int i =0; i < getCartas().length; i++) {
+    for(int i = 0; i < getCartas().length; i++) {
       posicao = (int) (Math.random() * 10 * 5.5);
       auxiliar = getCartas()[i];
       getCartas()[i] = getCartas()[posicao];
