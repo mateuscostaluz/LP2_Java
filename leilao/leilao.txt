@@ -1,0 +1,46 @@
+Dados leilao
+ID do leilão: 3 Data de ocorrência: 1/11/2020 Lista de produtos: Matrícula do imóvel: 123,
+Endereço do imóvel: Rua das Acï¿½cias,
+Descrição do imóvel: Casa maneira pra caramba,
+Valor mínimo do imóvel: 1000.0,
+Tipo do imóvel: Casa.
+
+Matrícula do veículo: 000,
+Placa do veículo: ABC-1234
+Kilometragem rodada: 100,
+Cor do veículo: Amarelo,
+Descrição do veículo: Carro menos legal,
+Valor mínimo do veículo: 1000.0,
+Tipo do imóvel: Carro.
+
+Matrícula do veículo: 456,
+Placa do veículo: ABC-1234
+Kilometragem rodada: 100,
+Cor do veículo: Amarelo,
+Descrição do veículo: Carro mais ou menos legal,
+Valor mínimo do veículo: 5000.0,
+Tipo do imóvel: Carro.
+
+Matrícula do veículo: 789,
+Placa do veículo: ABC-1234
+Kilometragem rodada: 1000,
+Cor do veículo: Amarelo,
+Descrição do veículo: Motocicleta mais ou menos legal,
+Valor mínimo do veículo: 10000.0,
+Tipo do imóvel: Motocicleta.
+
+ Lista de clientes:  Instituicao financeira responsável: CNPJ da institução: 010203040506, Nome da institução: A loja de coisas usadas, Endereço da instituição: Rua Tupi Guaranï¿½, Email da instituição: einteiro@einteiro.com. Lista de lances: ID do lance: 1
+CPF do cliente: 1,
+RG do cliente: 1,
+Nome completo do cliente: Pessoa mal intecionada,
+Endereço do cliente: Rua dos Quï¿½micos,
+Email do cliente: x@x.com.
+
+Matrícula do imóvel: 123,
+Endereço do imóvel: Rua das Acï¿½cias,
+Descrição do imóvel: Casa maneira pra caramba,
+Valor mínimo do imóvel: 1000.0,
+Tipo do imóvel: Casa.
+
+Valor do lance: R$ 1000,00.
+ Status do leilão: Aberto.
